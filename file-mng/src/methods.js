@@ -45,7 +45,6 @@ const addFile = async (fileName, data='') => {
 };
 
 const renameFile = async (path_to_file, new_filename) => {
-    // await checkForAccessFile(new_filename).then(() => {throw Error}) //should be
     await fs.rename(path_to_file, new_filename)
 };
 
